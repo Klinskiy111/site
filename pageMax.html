@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script type="text/javascript">
+		function Max(a, b, c) {
+				a = parseFloat(a);
+				b = parseFloat(b);
+				c = parseFloat(c);
+
+				if(isNaN(a) || isNaN(c) || isNaN(b) ) return "err";
+
+				if ((a > b) && (a > c))
+				{
+					return a;
+				}
+				else 
+				{
+					if(b > c)
+					{
+						return b;
+					}
+					else
+					{
+						return  c;
+					}
+				}
+			}
+ 
+	</script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="pageMax.html">Максимальное число</a><span>/</span>
+		<a href="page3.html">Загадки</a><span>/</span>
+		<a href="page4.html">Угадайка</a><span>/</span>
+		<a href="page5.html">Угадайка мультиплеер</a><span>/</span>
+	</div>
+<div id="content">
+	<h1>Личный сайт студента GeekBrains</h1>
+    <div id="center">
+		<img src="img/photo.png">
+
+		<div id="box_text">
+		 <input type="text" id="numb1" ><br>
+		<input type="text" id="a123"  ><br>
+		<input type="text" id="number" ><br>
+
+		<input type="button" 
+				value="Жми меня"
+				onclick=" Res.value = Max(numb1.value, a123.value, number.value)"><br>
+		<input type="text" id="Res"  ><br>
+
+	<br></br>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>

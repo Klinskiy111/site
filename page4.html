@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="pageMax.html">Максимальное число</a><span>/</span>
+		<a href="page3.html">Загадки</a><span>/</span>
+		<a href="page4.html">Угадайка</a><span>/</span>
+		<a href="page5.html">Угадайка мультиплеер</a><span>/</span>
+	</div>
+<div id="content">
+	<h1>Личный сайт студента GeekBrains</h1>
+    <div id="center">
+		<img src="img/photo.png">
+
+		<div id="box_text">
+			<script>
+				var randomNumber = Math.floor( Math.random() * 100 ) + 1;
+
+				var answer = -1;
+				var userTry = 0;
+
+				while(answer != randomNumber)
+				{
+					answer = prompt("Введите загаданное число");
+
+					if (answer == "q")
+					{
+						break;
+					}
+					else
+					{
+						answer = parseInt(answer);
+					}
+					
+					userTry++; //  userTry = userTry + 1;
+					if( answer == randomNumber )
+					{
+						alert("Вы угадали с "+ userTry + "попыток");
+					}
+					else
+					{
+						if(answer>randomNumber)
+						{
+							alert("Слишком большое");
+						}
+						else
+						{
+							alert("Слишком маленькое");
+						}
+					}
+				}
+				
+			</script>
+			<p>Игра окончена</p>			
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="pageMax.html">Максимальное число</a><span>/</span>
+		<a href="page3.html">Загадки</a><span>/</span>
+		<a href="page4.html">Угадайка</a><span>/</span>
+		<a href="page5.html">Угадайка мультиплеер</a><span>/</span>
+	</div>
+<div id="content">
+	<h1>Личный сайт студента GeekBrains</h1>
+    <div id="center">
+		<img src="img/photo.png">
+
+		<div id="box_text">
+			<script>
+			var i = 0, k = 1;
+			var answer1 = "Лапша";
+			var answer2 = "Щука";
+			var answer3 = "Одно";
+			var answer4 = "Елка";
+				var question1 = prompt("Сережки для простаков.");
+				if(question1==answer1)
+				{
+				alert("Правельно! ");
+				i++;
+					}
+					else
+					{
+				alert("Неверно! + 3 загадки");
+				k=k+3;
+				var question2 = prompt("Хвостом виляет, зубаста, а не лает.");
+				if(question2==answer2){
+				alert("Правельно! ");
+				i++;
+					}
+					else
+					{
+				alert("Неверно! ");
+				}
+				var question3 = prompt("Сколько яиц можно съесть натощак?");
+				if(question3==answer3){
+				alert("Правельно! ");
+				i++;
+					}
+					else
+					{
+				alert("Неверно! ");
+				}
+				var question4 = prompt("Зимой и летом одним цветом ...");
+				if(question4==answer4){
+				alert("Правельно! ");
+				i++;
+					}
+					else
+					{
+				alert("Неверно! ");
+				}
+
+				}
+				alert("Игра окончена. Вы ответили на " + i + " из "+k+" ответов");
+			</script>
+			<p>Игра окончена</p>			
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>
